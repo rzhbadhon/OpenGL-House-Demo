@@ -1,22 +1,43 @@
+🎨 Cyan Window – GLFW + OpenGL
+A super simple OpenGL example that opens a window with a cyan background and a custom title:
+Razibul Hasan Badhon.
+Press R (for "Razibul") or ESC to close the window.
 
-# Setup
+✨ Features
+🟦 Cyan background – bright and eye-catching
 
-## 1.  Windows ##
+📝 Custom window title – your name at the top
 
-   * ### Download glfw libray from https://www.glfw.org/download.html. Download *64-bit Windows binaries* from *Windows pre-compiled binaries*. ###  
-   * ### Create **build** and **lib** folder in Code Repo. Put *glfw3.dll* from *lib-mingw-w64* folder of glfw library to **build** and **lib** folder.  ###
-   * ### For C++ compiler and make, Download MSYS2 Package Manager from https://www.msys2.org/ . ###  
-   * ### Run following commands in MSYS2 terminal: ```pacman -S base-devel``` and ```pacman -S gcc``` . ### 
-   * ### add your bin folder (which includes g++.exe and make.exe) PATH (C:\msys64\usr\bin) of msys64 installation directory in your environment variable.
-   * ### Run ```make win``` in Terminal. ###
-   * ### ```.exe``` file will be in **build** folder. ###
-   * ### if your code does not run, then you have to check openGL version by installing GLview from http://www.realtech-vr.com/home/glview . If your openGL version is below 3.3, then update windows. ### 
-   * ### ***if compiler says it cannot find khrplatform.h, then put this file https://github.com/nahin100/17-CSE4202/blob/main/Lab0/include/khrplatform.h in *include* folder. Also, change header file statement from ```#include <KHR/khrplatform.h>``` to ```#include "khrplatform.h"``` in *glad.h* file in include folder*** ### 
-   
-​
-## 2. Linux ##
+⌨ Simple controls – press R or ESC to exit
 
-   * ### Run following command in Terminal:  ```sudo apt-get install libglfw3-dev``` ###  
-   * ### Create **build** and **lib** folder in Code Repo. ###
-   * ### Run ```make linux``` in terminal. ###
-   * ### executable file will be in **build** folder. ###
+🪶 Minimal & beginner-friendly code
+
+⚙ Build & Run
+1. Install dependencies
+GLFW – window creation & input
+
+GLAD – OpenGL function loader
+
+2. Build (example with g++)
+bash
+Copy
+Edit
+g++ src/main.cpp src/glad.c -o CyanWindow -Iinclude -lglfw3 -lopengl32 -lgdi32
+3. Run
+bash
+Copy
+Edit
+./CyanWindow
+📂 Project Structure
+makefile
+Copy
+Edit
+Graphics/
+│
+├── include/       # Header files (GLFW, GLAD, etc.)
+├── src/           # Source files
+│   ├── main.cpp   # Entry point
+│   └── glad.c     # GLAD loader
+└── README.md
+📜 License
+This project is licensed under the MIT License – feel free to modify and share.
