@@ -1,46 +1,43 @@
-🎨 Cyan Window – GLFW + OpenGL
-A super simple OpenGL example that opens a window with a cyan background and a custom title:
-Razibul Hasan Badhon.
-Press R (for "Razibul") or ESC to close the window.
+# OpenGL-House-Demo
 
-✨ Features
-🟦 Cyan background – bright and eye-catching
+This project demonstrates a simple house shape rendered using OpenGL, GLFW, and GLAD. The house consists of a cyan square (body) and a red triangle (roof).
 
-📝 Custom window title – your name at the top
+## Features
 
-⌨ Simple controls – press R or ESC to exit
+- Renders a square and triangle using modern OpenGL (3.3 core profile)
+- Uses GLFW for window/context management
+- Uses GLAD for OpenGL function loading
+- Press **B** to exit the application
 
-🪶 Minimal & beginner-friendly code
+## Requirements
 
-⚙ Build & Run
-1. Install dependencies
-GLFW – window creation & input
+- C++ compiler
+- [GLFW](https://www.glfw.org/)
+- [GLAD](https://glad.dav1d.de/)
+- OpenGL 3.3 or higher
 
-GLAD – OpenGL function loader
+## Build & Run
 
-2. Build (example with g++)
-bash
-Copy
-Edit
-g++ src/main.cpp src/glad.c -o CyanWindow -Iinclude -lglfw3 -lopengl32 -lgdi32
-3. Run
-bash
-Copy
-Edit
-./CyanWindow
-📂 Project Structure
-makefile
-Copy
-Edit
-Graphics/
-│
-├── include/       # Header files (GLFW, GLAD, etc.)
-├── src/           # Source files
-│   ├── main.cpp   # Entry point
-│   └── glad.c     # GLAD loader
-└── README.md
-📜 License
-This project is licensed under the MIT License – feel free to modify and share.
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/OpenGL-House-Demo.git
+   cd OpenGL-House-Demo
+   ```
+
+2. Make sure you have GLFW and GLAD set up in your project.
+
+3. Compile and run:
+   ```sh
+   g++ src/main.cpp -o house -lglfw3 -lopengl32 -lgdi32
+   .\house
+   ```
+
+   *(Adjust the command for your environment and library paths.)*
+
+## Controls
+
+- **B**: Exit the window
+
 
 Output:
 ![Screenshot](screenshot.png)
