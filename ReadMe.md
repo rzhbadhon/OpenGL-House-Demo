@@ -41,3 +41,6 @@ Graphics/
 └── README.md
 📜 License
 This project is licensed under the MIT License – feel free to modify and share.
+
+Output:
+![Screenshot](screenshot.png)
